@@ -1,6 +1,6 @@
-Scripting (weight: 30%)
+**Scripting (weight: 30%)**
 
-What version control systems have you used?  Why use version control?
+**What version control systems have you used?  Why use version control?**
 
 I have used CVS back in the day,and currently use both SVN and Git in my current job.  We use version control so that we can conduct many different types and levels of devleopment activities, including:
 
@@ -12,7 +12,7 @@ I have used CVS back in the day,and currently use both SVN and Git in my current
 
 
 
-For a directory containing multiple files, implement a way to scan each file for the string "foobar" and replace it with "fubar"
+**For a directory containing multiple files, implement a way to scan each file for the string "foobar" and replace it with "fubar"**
 
 There's a numerous different utilities which will allow you to do this, including sed, awk, etc.
 
@@ -34,7 +34,7 @@ So, let's provide a solution for this using sed:
 sed -i 's/foobar/fubar/g' /path/to/dir/*
 
 
-For this exercise, create a file containing 100 unique users. All fields must be unique. The data should be formatted in CSV format in this manner:  id,name,email
+**For this exercise, create a file containing 100 unique users. All fields must be unique. The data should be formatted in CSV format in this manner:  id,name,email**
 
 There are a couple different elements that we want to focus on in the creation of this script:
 
@@ -53,7 +53,7 @@ To be simple, let's go with [name]@puppet.com .
 The creation of the script is detailed over in Github via https://github.com/brennx0r/puppet-questions/blob/master/scripting/create-100-unique-users.sh
 
 
-How can you create 100 files named 000.pp ... 099.pp whose contents are:
+**How can you create 100 files named 000.pp ... 099.pp whose contents are:**
 
 class myfile000 {
     if $kernel == "Linux" {
