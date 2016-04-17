@@ -1,9 +1,9 @@
- class myfile$NUMBER {
+ class myfile$i {
     if $kernel == "Linux" {
-      file { '/tmp/myfile$NUMBER':
+      file { '/tmp/myfile$i':
         ensure  => file,
         backup  => false,
-        content => "Hello myfile$NUMBER",
+        content => "Hello myfile$i",
       }
     }
  }

@@ -12,8 +12,6 @@ I have used CVS back in the day,and currently use both SVN and Git in my current
 
 
 
-
-
 For a directory containing multiple files, implement a way to scan each file for the string "foobar" and replace it with "fubar"
 
 There's a numerous different utilities which will allow you to do this, including sed, awk, etc.
@@ -82,6 +80,8 @@ class myfile099 {
 First thing I would want to do is create a "baseline" seed file that is parameterized on the integer identities to use for creation of the files need myfile000.pp - myfile099.pp)
 
 Next, I create the script that will use for each in i == 000 through i == 099:
+
+We cannot just iterate the integer - we'll need ot use something like seq in the script.
 
 1. Copies the seed file to a new file using syntax myfile$1.pp
 2. Scans the created file and replaces $i with the perameter value for all relevant instances of $1 in the file
