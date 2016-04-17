@@ -61,11 +61,7 @@ SSH-2.0-OpenSSH_6.2p2 Debian-6
 ```
 
 
-
-
-
-
-Please provide basic troubleshooting steps for isolating connectivity problem between two Linux hosts, using only the shell. 
+**Please provide basic troubleshooting steps for isolating connectivity problem between two Linux hosts, using only the shell.**
 
 There's many different layers that you can explore to troubleshoot / resolve, but I'll try to narrow down things to try specifically using the shell as asked.
 
@@ -73,8 +69,10 @@ Can you SSH into either of the hosts?  The below answer assumes that this is pos
 
 While SSHed into one of the hosts, try the following to gauge connectivity to the second host:
 
+```
 ping [fqdn for second host]
 ping [ip of second host]
+```
 
 If you are able to get response with one but not the other, that narrows down the troubleshooting (DNS configuration is likely culprit).
 
@@ -91,26 +89,26 @@ For each network interface, there is a corresponding interface configuration scr
 
 
 
-How do you list a system’s currently open ports and/or active connections?
+**How do you list a system’s currently open ports and/or active connections?**
 
 netstat command, which prints network connections, routing tables, interface statistics, masquerade connections, and multicast memberships, etc. 
 
 To find open ports:
 
-netstat -l
+`netstat -l`
 
 To find open ports and active connections:
 
-netstat -vatn
+`netstat -vatn`
 
 
 Another (and suggested) option is to use the lsof command, which lists open files, and ports on Linux, FreeBSD, Solaris and other Unixish systems.
 
 To display the list of open ports:
 
-lsof -i
+`lsof -i`
 
 To display all open files:
 
-lsof
+`lsof`
 
