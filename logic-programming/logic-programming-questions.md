@@ -2,7 +2,7 @@
 
 ## **In this section, you can use any programming language. You do NOT need a programming environment to compile and test code.**
 
-**Copy the CSV data below into a file. **
+**Copy the CSV data below into a file.**
 
 ```
 Order #,Customer ID,Customer Name,Product SKU,Price,Purchase Date
@@ -26,13 +26,13 @@ Order #,Customer ID,Customer Name,Product SKU,Price,Purchase Date
 2887140,6,Jud Gofferton,678-903,$0.23,05/15/2013
 ```
 
-**Create a program that will extract the data from the CSV file and perform the following operations:
+**Create a program that will extract the data from the CSV file and perform the following operations:**
 
-- Organize and sort the data by customer name.
-- Calculate the total number of orders per customer.
-- Calculate the average cost of orders per customer.
+- **Organize and sort the data by customer name.**
+- **Calculate the total number of orders per customer.**
+- **Calculate the average cost of orders per customer.**
 
-Once the CSV has been loaded into a data model, create a report file containing the desired information from above in either JSON or XML format. You may use built-in JSON or XML libraries, and other built-in functions like sorting & searching in the language of your choice. (This includes using pseudo code.)**
+**Once the CSV has been loaded into a data model, create a report file containing the desired information from above in either JSON or XML format. You may use built-in JSON or XML libraries, and other built-in functions like sorting & searching in the language of your choice. (This includes using pseudo code.)**
 
 
 Ran out of time before I could flesh out the answer for this question.
