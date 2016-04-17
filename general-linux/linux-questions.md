@@ -122,7 +122,7 @@ On the job, I interact most with procfs in terms of pid (process id) interaction
 
 Stopping processes:
 
-kill [args] [pid]
+'kill [args] [pid]'
 
 
 **What are the steps for configuring and executing a passwordless login session to a remote linux system?**
