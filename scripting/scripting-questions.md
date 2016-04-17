@@ -87,7 +87,7 @@ Next, I create the main script:
 https://github.com/brennx0r/puppet-questions/blob/master/scripting/create-100-unique-files.sh
 
 1. Copies the seed file over to a new file called myfile$n.pp (where $n is defined for 2 relevent cases: 000-009 and 010-099)
-2. Scans the created file and replaces $n with the perameter value for all relevant instances of $n in the file
+2. Scans the created file and replaces $n with the parameter value for all relevant instances of $n in the file
 
 
 
