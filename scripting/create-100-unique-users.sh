@@ -21,5 +21,5 @@ FILENAME=$2
 
 # Create the lines for the output file
 for i in {1..100}; do
-  echo $i >> $2
+  echo $i,$1AwesomeUnicornGlitter,$1AwesomeUnicornGlitter@puppet.com >> $2
 done 
