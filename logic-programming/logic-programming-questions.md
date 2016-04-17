@@ -31,3 +31,27 @@ Calculate the total number of orders per customer.
 Calculate the average cost of orders per customer.
 
 Once the CSV has been loaded into a data model, create a report file containing the desired information from above in either JSON or XML format. You may use built-in JSON or XML libraries, and other built-in functions like sorting & searching in the language of your choice. (This includes using pseudo code.)
+
+
+Ran out of time before I could flesh out the answer for this question.
+
+At a glance, I would like to use ruby and do something like:
+
+1.  Create the tests for the requirements in this question (using rspec or minitest)
+
+-  Sort feature
+-  Secondary sort feature
+-  Cost cruncher
+
+2.  Create the CSV file to be read in.  Call it data.csv.
+3   Create the solution:
+
+     require csv
+
+
+     read in the csv
+     data.csv = CSV.read 'data.csv'
+
+     then use def for csv sorts
+     then use def for calculation 
+
