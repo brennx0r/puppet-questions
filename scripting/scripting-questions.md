@@ -55,10 +55,6 @@ To be simple, let's go with [name]@puppet.com .
 The creation of the script is detailed over in Github via https://github.com/brennx0r/puppet-questions/blob/master/scripting/create-100-unique-users.sh
 
 
-
-
-
-
 How can you create 100 files named 000.pp ... 099.pp whose contents are:
 
 class myfile000 {
@@ -83,17 +79,13 @@ class myfile099 {
 
 
 
- First thing I would want to do is create a "baseline" file to use for all of the file creation that looks something like this:
+First thing I would want to do is create a "baseline" seed file that is parameterized on the integer identities to use for creation of the files need myfile000.pp - myfile099.pp)
+
+Next, I create the script that will use for each in i == 000 through i == 099:
+
+1. Copies the seed file to a new file using syntax myfile$1.pp
+2. Scans the created file and replaces $i with the perameter value for all relevant instances of $1 in the file
 
 
- class myfile$NUMBER {
-    if $kernel == "Linux" {
-      file { '/tmp/myfile$NUMBER':
-        ensure  => file,
-        backup  => false,
-        content => "Hello myfile$NUMBER",
-      }
-    }
- }
 
 
