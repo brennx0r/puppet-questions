@@ -89,6 +89,7 @@ https://github.com/brennx0r/puppet-questions/blob/master/scripting/create-100-un
 1. Copies the seed file over to a new file called myfile$n.pp (where $n is defined for 2 relevent cases: 000-009 and 010-099)
 2. Scans the created file and replaces $n with the parameter value for all relevant instances of $n in the file
 
+It should be noted that I'm calling the files "myfile$n.pp" and not "$n.pp" because if we called the file "$n.pp" it would result in a Puppet catalog error when we run the catalog (at least, this is what happens in 3.x versions of Puppet.  If the file is not called init.pp, the class name and the file name MUST match or an error will be given.)
 
 
 
