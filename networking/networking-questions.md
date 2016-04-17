@@ -1,16 +1,15 @@
-Networking (weight: 15%)
+# **Networking (weight: 15%)**
 
-What are important differences between TCP and UDP protocols?
+**What are important differences between TCP and UDP protocols?**
 
 From Wikipedia:
 
 The User Datagram Protocol (UDP) and Transmission Control Protocol (TCP) are the “siblings” of the transport layer in the TCP/IP protocol suite. They perform the same role, providing an interface between applications and the data-moving capabilities of the Internet Protocol (IP), but they do it in very different ways.
 
-A great image representation of the main differences can be found via tcp-udp.jpg
+A great image representation of the main differences can be found via ![udp vs tcp](https://github.com/brennx0r/puppet-questions/blob/master/networking/tcp-udp.jpg "udp vs tcp")
 
 
-
-What are two TCP/IP name resolution systems?  Please explain how name resolution ordering is configured on a modern Linux system.
+**What are two TCP/IP name resolution systems?  Please explain how name resolution ordering is configured on a modern Linux system.**
 
 Under Linux you need to use /etc/nsswitch.conf file which is used by system databases and Name Service Switch configuration file
 
@@ -37,11 +36,11 @@ order hosts,bind
 Save and close the file.
 
  
-Please provide an example of how you would determine if a remote system is ‘listening’ on specific port number?
+**Please provide an example of how you would determine if a remote system is ‘listening’ on specific port number?**
 
 You could use telnet:
 
-telnet [hostname] [port]
+`telnet [hostname] [port]`
 
 If telnet is not available:
 
@@ -55,9 +54,11 @@ Bash has been able to access TCP and UDP ports for a while. From the man page:
     or service name, bash attempts to open a UDP connection to the corresponding socket.
 So you could use something like this:
 
-xenon-lornix:~> cat < /dev/tcp/127.0.0.1/22
+```
+cat < /dev/tcp/127.0.0.1/22
 SSH-2.0-OpenSSH_6.2p2 Debian-6
 (press ^C to escape)
+```
 
 
 
