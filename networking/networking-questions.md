@@ -17,7 +17,7 @@ Various functions in the C Library need to be configured to work correctly in th
 
 Step # 1: /etc/nsswitch.conf
 Open /etc/nsswitch.conf file using text editor:
-# vi /etc/nsswitch.conf
+`vi /etc/nsswitch.conf`
 
 Look for hosts:
 hosts: files dns mdns4
@@ -28,7 +28,7 @@ host.conf – resolver configuration file
 The file /etc/host.conf contains configuration information specific to the resolver library. It should contain one configuration keyword per line, followed by appropriate configuration information.
 
 Open /etc/host.conf file
-# vi /etc/host.conf
+`vi /etc/host.conf`
 
 Find order line which specifies how host lookups are to be performed. It should be followed by one or more lookup methods, separated by commas. Valid methods are bind (dns server), hosts (/etc/hosts file), and nis (old method).
 order hosts,bind
