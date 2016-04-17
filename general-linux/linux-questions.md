@@ -116,8 +116,9 @@ https://en.wikipedia.org/wiki/Procfs#Linux
 
 On the job, I interact most with procfs in terms of pid (process id) interaction.  Stuff like finding a process id:
 
-ps aux | grep [search-term]
-pidof [args]
+`ps aux | grep [search-term]`
+
+`pidof [args]`
 
 Stopping processes:
 
