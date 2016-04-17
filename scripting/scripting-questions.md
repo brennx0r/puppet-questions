@@ -53,7 +53,8 @@ The creation of the script is detailed over in Github via https://github.com/bre
 
 **How can you create 100 files named 000.pp ... 099.pp whose contents are:**
 
-```class myfile000 {
+```
+class myfile000 {
     if $kernel == "Linux" {
       file { '/tmp/myfile000':
         ensure  => file,
@@ -71,7 +72,8 @@ class myfile099 {
         content => "Hello myfile099",
       }
     }
- }```
+ }
+ ```
 
 
 
