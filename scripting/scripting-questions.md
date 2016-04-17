@@ -77,14 +77,17 @@ class myfile099 {
 
 
 
-First thing I would want to do is create a "baseline" seed file that is parameterized on the integer identities to use for creation of the files need myfile000.pp - myfile099.pp)
+First thing I would want to do is create a "baseline" seed file that is parameterized on the integer identities to use for creation of the files need myfile000.pp - myfile099.pp):
 
-Next, I create the script that will use for each in i == 000 through i == 099:
+https://github.com/brennx0r/puppet-questions/blob/master/scripting/seed.pp
 
-We cannot just iterate the integer - we'll need ot use something like seq in the script.
 
-1. Copies the seed file to a new file using syntax myfile$1.pp
-2. Scans the created file and replaces $i with the perameter value for all relevant instances of $1 in the file
+Next, I create the main script:
+
+https://github.com/brennx0r/puppet-questions/blob/master/scripting/create-100-unique-files.sh
+
+1. Copies the seed file over to a new file called myfile$n.pp (where $n is defined for 2 relevent cases: 000-009 and 010-099)
+2. Scans the created file and replaces $n with the perameter value for all relevant instances of $n in the file
 
 
 

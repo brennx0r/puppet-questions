@@ -1,6 +1,6 @@
 #!/bin/sh
 # Define first integer to use
-i=1
+i=0
 
 # Build the output files
 for i in {0..9}; do
