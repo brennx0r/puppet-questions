@@ -13,9 +13,10 @@ A great image representation of the main differences can be found via ![udp vs t
 
 Under Linux you need to use /etc/nsswitch.conf file which is used by system databases and Name Service Switch configuration file
 
-Various functions in the C Library need to be configured to work correctly in the local environment. Tradition ally, this was done by using files (e.g., ‘/etc/passwd’), but other nameservices (like the Network Information Service (NIS) and the Domain Name Service (DNS)) became popular, and were hacked into the C library, usually with a fixed search order.
+Various functions in the C Library need to be configured to work correctly in the local environment. Traditionally, this was done by using files (e.g., ‘/etc/passwd’), but other nameservices (like the Network Information Service (NIS) and the Domain Name Service (DNS)) became popular, and were hacked into the C library, usually with a fixed search order.
 
-Step # 1: /etc/nsswitch.conf
+
+/etc/nsswitch.conf
 Open /etc/nsswitch.conf file using text editor:
 `vi /etc/nsswitch.conf`
 
