@@ -39,14 +39,12 @@ Ran out of time before I could flesh out the answer for this question.
 
 At a glance, I would like to use ruby and do something like:
 
-1.  Create the tests for the requirements in this question (using rspec or minitest)
-
--  Sort feature
--  Secondary sort feature
--  Cost cruncher
-
-2.  Create the CSV file to be read in.  Call it data.csv.
-3.   Create the solution:
+1. Create the tests for the requirements in this question (using rspec or minitest)
+..1. Sort feature
+..1. Secondary sort feature
+..1. Cost cruncher
+1. Create the CSV file to be read in.  Call it data.csv.
+1. Create the solution:
 
      require csv
 
