@@ -55,3 +55,5 @@ At a glance, I would like to use ruby and do something like:
      then use def for csv sorts
      then use def for calculation 
 
+### **Update:** I have created the start of a project that begins to solve for the exercise. The project is located:  https://github.com/brennx0r/sortorator 
+
